@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Agencia de Viajes</title>
+
+<style>
+
+body{
+    margin:0;
+    font-family: Arial, sans-serif;
+}
+
+header{
+    background:#0a4fa3;
+    padding:15px;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    color:white;
+    font-size:22px;
+    font-weight:bold;
+}
+
+.menu{
+    list-style:none;
+    display:flex;
+    gap:20px;
+}
+
+.menu li{
+    display:inline;
+}
+
+.menu a{
+    text-decoration:none;
+    color:white;
+    font-size:16px;
+    padding:8px 12px;
+    border-radius:5px;
+}
+
+.menu a:hover{
+    background:#1e73d8;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<nav>
+
+<div class="logo">✈️ TravelWorld</div>
+
+<ul class="menu">
+<li><a href="index.html">Inicio</a></li>
+<li><a href="destinos.html">Destinos</a></li>
+<li><a href="vuelos.html">Vuelos</a></li>
+<li><a href="precios.html">Precios</a></li>
+<li><a href="mapas.html">Mapas</a></li>
+<li><a href="contacto.html">Contacto</a></li>
+</ul>
+
+</nav>
+</header>
+
+</body>
+</html>
