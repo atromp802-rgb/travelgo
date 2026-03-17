@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planes Semanales | travelgo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f0f2f5;
+        }
+
+        .plan-header {
+            background: #0d6efd;
+            color: white;
+            padding: 40px 0;
+            margin-bottom: 30px;
+            text-align: center;
+            border-radius: 0 0 50px 50px;
+        }
+
+        .day-badge {
+            background-color: #ffc107;
+            color: #000;
+            font-weight: bold;
+            border-radius: 5px;
+            padding: 2px 8px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">✈️ travelgo</a>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="precios y vuelos.html">Vuelos</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="ofertas.html">Planes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="plan-header">
+        <h1 class="display-4 fw-bold">Planes de 7 Días</h1>
+        <p class="lead">¿No sabes qué hacer? Nosotros armamos tu semana.</p>
+    </header>
+
+    <div class="container mb-5">
+        <div class="accordion shadow" id="accordionPlanes">
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#planAruba">
+                        🏝️ Una Semana en Aruba (Relax Total)
+                    </button>
+                </h2>
+                <div id="planAruba" class="accordion-collapse collapse show" data-bs-parent="#accordionPlanes">
+                    <div class="accordion-body">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item"><span class="day-badge">Día 1</span> Llegada y cena en
+                                Oranjestad.</li>
+                            <li class="list-group-item"><span class="day-badge">Día 2</span> Snorkel en Baby Beach.</li>
+                            <li class="list-group-item"><span class="day-badge">Día 3</span> Tour en Jeep por el Parque
+                                Nacional Arikok.</li>
+                            <li class="list-group-item"><span class="day-badge">Día 4</span> Visita a la Granja de
+                                Mariposas y Palm Beach.</li>
+                            <li class="list-group-item"><span class="day-badge">Día 5</span> Navegación en catamarán al
+                                atardecer.</li>
+                            <li class="list-group-item"><span class="day-badge">Día 6</span> Compras en el centro y
+                                cuevas Guadirikiri.</li>
+                            <li class="list-group-item"><span class="day-badge">Día 7</span> Desayuno frente al mar y
+                                regreso.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#planShanghai">
+                        🏙️ Una Semana en Shanghái (Futurista)
+                    </button>
+                </h2>
+                <div id="planShanghai" class="accordion-collapse collapse" data-bs-parent="#accordionPlanes">
+                    <div class="accordion-body">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item"><span class="day-badge">Día 1</span> Caminata por el Bund y
+                                vista de rascacielos.</li>
+                            <li class="list-group-item"><span class="day-badge">Día 2</span> Subida a la Torre de
+                                Shanghái (la más alta).</li>
+                            <li class="list-group-item"><span class="day-badge">Día 3</span> Jardín Yuyuan y Ciudad
+                                Vieja.</li>
+                            <li class="list-group-item"><span class="day-badge">Día 4</span> Día de compras en Nanjing
+                                Road.</li>
+                            <li class="list-group-item"><span class="day-badge">Día 5</span> Visita a Disneyland
+                                Shanghái.</li>
+                            <li class="list-group-item"><span class="day-badge">Día 6</span> Pueblo de agua Zhujiajiao
+                                (la Venecia de China).</li>
+                            <li class="list-group-item"><span class="day-badge">Día 7</span> Museo de Shanghái y
+                                despedida.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#planRusia">
+                        🏰 Una Semana en Moscú (Historia Viva)
+                    </button>
+                </h2>
+                <div id="planRusia" class="accordion-collapse collapse" data-bs-parent="#accordionPlanes">
+                    <div class="accordion-body">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item"><span class="day-badge">Día 1</span> Plaza Roja y Catedral de
+                                San Basilio.</li>
+                            <li class="list-group-item"><span class="day-badge">Día 2</span> Recorrido por el Kremlin.
+                            </li>
+                            <li class="list-group-item"><span class="day-badge">Día 3</span> Tour por las estaciones del
+                                Metro (Palacios Subterráneos).</li>
+                            <li class="list-group-item"><span class="day-badge">Día 4</span> Teatro Bolshói y calle
+                                Arbat.</li>
+                            <li class="list-group-item"><span class="day-badge">Día 5</span> Parque Gorky y Museo de
+                                Cosmonáutica.</li>
+                            <li class="list-group-item"><span class="day-badge">Día 6</span> Mercado de Izmailovo
+                                (souvenirs y matrioshkas).</li>
+                            <li class="list-group-item"><span class="day-badge">Día 7</span> Crucero por el río Moscova.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="text-center mt-5">
+            <a href="contacto.html" class="btn btn-success btn-lg">¡Quiero reservar uno de estos planes!</a>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
