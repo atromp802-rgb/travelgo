@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login</title>
+</head>
+
+<body>
+  <h1>Iniciar sesión</h1>
+
+  <form id="loginForm">
+    <div>
+      <label for="loginUsername">Usuario:</label>
+      <input type="text" id="loginUsername" name="username" required />
+    </div>
+
+    <div>
+      <label for="loginPassword">Contraseña:</label>
+      <input type="password" id="loginPassword" name="password" required />
+    </div>
+
+    <button type="submit">Entrar</button>
+  </form>
+
+  <p id="loginMessage"></p>
+
+  <script src="./js/auth.js"></script>
+  <script>
+    const loginForm = document.getElementById("loginForm");
+    const loginMessage = document.getElementById("loginMessage");
+
+    loginForm.addEventListener("submit", async function (event) {
+      event.preventDefault();
+
+      const username = document.getElementById("loginUsername").value.trim();
+      const password = document.getElementById("loginPassword").value;
+
+      const result = await loginUser({ username, password });
+
+      loginMessage.textContent = result.message;
+      loginMessage.style.color = result.ok ? "green" : "red";
+    });
+  </script>
+</body>
+
+</html>
